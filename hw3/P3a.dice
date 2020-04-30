@@ -1,0 +1,12 @@
+let door1 = flip 0.3333 in
+let door2 = flip 0.3333 in
+let door3 = flip 0.3333 in
+let state1 = door1 && !door2 && !door3 in
+let state2 = !door1 && door2 && !door3 in
+let state3 = !door1 && !door2 && door3 in
+let world = observe (state1 || state2 || state3) in
+let door2_open = if !door2 then
+    (if door1 then flip 0.5 else flip 1.0)
+    else flip 0.0 in
+let tmp = observe door2_open in
+door3

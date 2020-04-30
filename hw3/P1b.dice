@@ -1,0 +1,10 @@
+let a = flip 0.2 in
+let b = flip 0.1 in
+let c = flip 0.8 in
+let d = flip 0.3 in
+let e = flip 0.5 in
+let prop1 = (!a || c || d) in
+let prop2 = (b || c || !d || e) in
+let prop3 = (!c || d || !e) in
+(prop1 && prop2 && prop3)
+

@@ -1,0 +1,14 @@
+let b = flip 0.001 in
+let e = flip 0.002 in
+let a = if b then
+     (if e then flip 0.95 else flip 0.94)
+     else (if e then flip 0.29 else flip 0.001) in
+let j = if a then 
+     flip 0.9 else
+     flip 0.05 in
+let m = if a then
+     flip 0.7 else
+     flip 0.01 in
+let tmp = observe (j && m) in
+b
+
