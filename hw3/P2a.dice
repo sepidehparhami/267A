@@ -10,5 +10,5 @@ let m = if a then
      flip 0.7 else
      flip 0.01 in
 let tmp = observe (j && m) in
-b
+b || e
 

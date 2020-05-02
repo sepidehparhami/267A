@@ -1,0 +1,21 @@
+Problem 1a
+Value   Probability
+true    0.561600
+false   0.438400
+
+Problem 1b
+Value   Probability
+true    0.665000
+false   0.335000
+
+Problem 2a
+Value   Probability
+true    0.459664
+false   0.540336
+
+Problem 2b
+Value   Probability
+true    0.037894
+false   0.962106
+
+Problem 3a
